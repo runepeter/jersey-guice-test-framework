@@ -13,7 +13,8 @@ public abstract class GuiceAndJerseyTest extends JerseyTest
     protected AppDescriptor configure()
     {
         Injector injector = Guice.createInjector(new ApplicationResourcesModule());
-        
+        injector.injectMembers(this);
+
         setTestContainerFactory(new GuiceInMemoryTestContainerFactory(injector));
 
         return new LowLevelAppDescriptor.Builder("ignore").contextPath("rest").build();
