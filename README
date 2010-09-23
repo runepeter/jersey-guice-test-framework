@@ -1,0 +1,31 @@
+:: Jersey+Guice In-Memory Test Framework ::
+
+Jersey provides a light-weight in-memory container for testing Jersey REST resources. However,
+this container does not support testing resources that are wired using Google Guice. This
+projects does provide a basic implementation of a Jersey in-memory container that support
+testing Guice-wired REST resources. In addition, the test classes themselves can be injected
+by the same Guice modules.
+
+This project provides a simple CRUD-based rest resource with an associated jUnit test case.
+
+    * BallsResource
+    * BallsResourceTestCase
+
+The resource is Guice-wired in the class ApplicationResourcesModule, and a backing BallRepository
+class is also injected in the test case to demonstrate resource sharing between jUnit test and
+resource implementation.
+
+The application is packaged as a WAR, and by running
+
+    > mvn jetty:run
+
+The actual resource can be tested using, for example, Curl:
+
+    > curl -v -X POST -d "color=red" http://localhost:8080/example/rest/balls
+    > curl -v http://localhost:8080/example/rest/balls/1
+    > curl -v -X PUT -d "color=green" http://localhost:8080/example/rest/balls/1
+
+Enjoy, and please contact me for questions.
+
+ E-mail: runepeter(at)gmail.com
+Twitter: runepeter
