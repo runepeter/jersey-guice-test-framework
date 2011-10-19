@@ -1,4 +1,4 @@
-package no.jforce.jersey.guice.test;
+package no.jforce.jersey.guice.example.test;
 
 import com.google.inject.Injector;
 import com.google.inject.Scope;
@@ -18,6 +18,10 @@ import com.sun.jersey.test.framework.spi.container.TestContainerFactory;
 import java.net.URI;
 import java.util.Map;
 
+/**
+ * @see https://github.com/runepeter/jersey-guice-test-framework#readme
+ * @author Rune Peter Bjrønstad <runepeter@gmail.com>
+ */
 public class GuiceInMemoryTestContainerFactory implements TestContainerFactory
 {
     private final Injector injector;

@@ -35,13 +35,10 @@
       <artifactId>jersey-guice</artifactId>
       <version>${jersey.version}</version>
     </dependency>
-
-    <!-- Test dependencies: -->
     <dependency>
       <groupId>com.sun.jersey.jersey-test-framework</groupId>
       <artifactId>jersey-test-framework-inmemory</artifactId>
       <version>1.4</version>
-      <scope>test</scope>
     </dependency>
   </dependencies>
 

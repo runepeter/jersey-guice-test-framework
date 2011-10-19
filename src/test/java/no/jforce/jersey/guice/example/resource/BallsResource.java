@@ -1,4 +1,4 @@
-package no.jforce.jersey.guice.resource;
+package no.jforce.jersey.guice.example.resource;
 
 import com.google.inject.Inject;
 import no.jforce.jersey.guice.example.repository.BallRepository;
