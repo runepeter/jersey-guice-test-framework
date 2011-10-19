@@ -1,4 +1,4 @@
-package no.jforce.jersey.guice.test;
+package no.jforce.jersey.guice.example.test;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
