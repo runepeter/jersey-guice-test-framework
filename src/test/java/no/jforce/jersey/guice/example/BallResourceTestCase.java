@@ -6,7 +6,6 @@ import com.sun.jersey.api.client.WebResource;
 import com.sun.jersey.api.representation.Form;
 import no.jforce.jersey.guice.example.repository.BallRepository;
 import no.jforce.jersey.guice.example.repository.HashMapBallRepository;
-import no.jforce.jersey.guice.example.test.GuiceAndJerseyTest;
 import org.junit.Test;
 
 import javax.ws.rs.core.Response;

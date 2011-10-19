@@ -1,4 +1,4 @@
-package no.jforce.jersey.guice.example.test;
+package no.jforce.jersey.guice.example;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
@@ -6,6 +6,7 @@ import com.sun.jersey.test.framework.AppDescriptor;
 import com.sun.jersey.test.framework.JerseyTest;
 import com.sun.jersey.test.framework.LowLevelAppDescriptor;
 import no.jforce.jersey.guice.example.ApplicationResourcesModule;
+import no.jforce.jersey.guice.example.test.GuiceInMemoryTestContainerFactory;
 
 public abstract class GuiceAndJerseyTest extends JerseyTest
 {
